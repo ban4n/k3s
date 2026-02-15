@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cowsay
+spec:
+  restartPolicy: Never
+  containers:
+  - name: cowsay
+    image: rancher/cowsay:latest
+    command: ["cowsay"]
+    args: ["test1"]
