@@ -12,6 +12,7 @@ spec:
       labels:
         app: cowsay
     spec:
+      restartPolicy: Never
       containers:
       - name: cowsay
         image: rancher/cowsay:latest
