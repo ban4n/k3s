@@ -12,9 +12,8 @@ spec:
       labels:
         app: cowsay
     spec:
-      restartPolicy: Never
       containers:
       - name: cowsay
         image: rancher/cowsay:latest
-        command: ["cowsay"]
-        args: ["test2"]
+        command: ["sh","-c"]
+        args: ["while true; do cowsay test2; sleep 20; done"]
