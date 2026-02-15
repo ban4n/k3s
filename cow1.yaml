@@ -8,4 +8,4 @@ spec:
   - name: cowsay
     image: rancher/cowsay:latest
     command: ["cowsay"]
-    args: ["test1"]
+    args: ["test2"]
